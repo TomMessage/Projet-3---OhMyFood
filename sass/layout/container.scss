@@ -1,0 +1,34 @@
+$lightgray: rgb(247, 247, 247);
+.introduction {
+    
+    h1 {
+      font-weight: bold;
+    }
+    p {
+      color: #4d4d4d;
+    }
+    justify-content: center;
+    text-align: center;
+    background-color: $lightgray;
+  }
+  .fonctionnement {
+    height: 250px;
+    display: flex;
+    flex-direction: column; 
+    padding-top: 20px;
+    margin-bottom: 40px;
+  }
+  .restaurants {
+    background-color: $lightgray;
+    padding-top: 30px;
+    
+  }
+  .introduction {
+    @include introduction;
+    h2 {
+      font-weight: bold;
+    }
+    p {
+      color: #4d4d4d;
+    }
+  }

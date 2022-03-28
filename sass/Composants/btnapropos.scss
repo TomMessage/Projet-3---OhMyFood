@@ -1,0 +1,8 @@
+.intro__btn { 
+    @include introduction__btn;
+    &:hover {
+        background-color: lighten($color-primary, 10%);
+        background-blend-mode: lighten;
+        box-shadow: 2px 2px 4px #353535;
+      }
+}

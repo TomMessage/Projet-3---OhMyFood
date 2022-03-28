@@ -1,0 +1,6 @@
+.restaurants__vignettes {
+    @include restaurants__vignettes;
+}
+ .restaurants img {
+    @include retaurants__img;
+ }
