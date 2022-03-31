@@ -1,34 +1,77 @@
 header {
-    @include header__pages;
+  @include header__pages;
 }
-.image__restaurant img{
-    object-fit: cover;
-    width: 100%;
-    height: 225px;
+.image__restaurant img {
+  object-fit: cover;
+  width: 100%;
+  height: 225px;
 }
 .fleche {
-    position: absolute;
-    left: 20px;
+  position: absolute;
+  left: 20px;
 }
-h1 img{
-    width: 212px;
+h1 img {
+  width: 212px;
 }
 h1 {
-    padding-bottom: 0px;
-    padding-top: 10px;
+  padding-bottom: 0px;
+  padding-top: 10px;
 }
 .menu__titre {
-    @include menu__titre;
+  @include menu__titre;
 }
+
 .plats {
-    @include menu;
+  @include menu;
 }
 .vignette__plats {
- @include plats;
+  @include plats;
 }
-.entrees h3, .plats-principaux h3, .desserts h3 {
-    font-family: Roboto;
-    padding-left: 10px;
-    text-transform: uppercase;
-    margin-bottom: 5px;
+.entrees h3,
+.plats-principaux h3,
+.desserts h3 {
+  font-family: Roboto;
+  padding-left: 10px;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+.deuxiemeligne {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  line-height: 1.5em;
+}
+.deuxiemeligne p {
+  margin: 0;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  padding: 0;
+}
+.deuxiemeligne span {
+  margin-right: 5px;
+}
+h4 {
+  font-size: 20px;
+  margin: 0;
+}
+.btn_commander {
+  text-align: center;
+  background-color: #f6f6f6;
+  margin-top: -10px;
+}
+.btn_commander button {
+  @include introduction__btn;
+  margin-top: 50px;
+  margin-bottom: 80px;
+  padding: 20px;
+  width: 50%;
+  &:hover {
+    background-color: lighten(#9356dc, 10%);
+    box-shadow: 3px 3px 5px #000;
+    background-blend-mode: lighten;
   }
+}
+.check {
+  @include check;
+}

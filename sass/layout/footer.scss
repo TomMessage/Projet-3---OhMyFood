@@ -1,28 +1,37 @@
 footer {
-    background-color: #353535;
-    padding: 15px;
-    color: white;
+  background-color: #353535;
+  padding: 15px;
+  color: white;
+  @include desktop {
+    text-align: center;
   }
-    h3 {
-      font-family: "Shrikhand";
-      font-size: 20px;
-      font-weight: 500;
-      margin: 0px;
-    }
-    ul {
-      list-style-type: none;
-      padding: 0px;
-   a {
-          color: white;
-        }
-        li {
-          padding: 3px;
-        }
-    }
-  
-      .fa-utensils {
-        margin-right: 12px;
-      }
-      .fa-hands-helping {
-        margin-right: 5px;
-      }
+  @include tablet {
+    text-align: center;
+  }
+}
+h3 {
+  font-family: "Shrikhand";
+  font-size: 20px;
+  font-weight: 500;
+  margin: 0px;
+}
+.footer__liens footer__liens--active {
+  list-style-type: none;
+  padding: 0px;
+
+}
+footer a {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+.liens__footer {
+  color: #fff;
+}
+
+.fa-utensils {
+  margin-right: 12px;
+}
+.fa-hands-helping {
+  margin-right: 5px;
+}

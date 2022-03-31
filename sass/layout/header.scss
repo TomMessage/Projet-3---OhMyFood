@@ -1,7 +1,11 @@
 .logo__heading {
     text-align: center;
-    
+   
+
 }
 .logo__heading img {
     width: 212px;
+     @include desktop {
+        margin-top: 30px;
+    }
 }

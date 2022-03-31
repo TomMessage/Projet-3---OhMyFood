@@ -1,0 +1,14 @@
+.ligne {
+  width: 40px;
+  border: 2px solid $color-tertiary;
+  margin-left: 10px;
+}
+.entrees {
+  animation: fadein 2s ease-in-out;
+}
+.plats-principaux {
+  animation: fadein 4s ease-in-out;
+}
+.desserts {
+  animation: fadein 6s ease-in-out;
+}

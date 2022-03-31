@@ -1,34 +1,66 @@
-$lightgray: rgb(247, 247, 247);
+
 .introduction {
-    
-    h1 {
-      font-weight: bold;
-    }
-    p {
-      color: #4d4d4d;
-    }
-    justify-content: center;
-    text-align: center;
-    background-color: $lightgray;
+  h1 {
+    font-weight: bold;
+   
   }
-  .fonctionnement {
-    height: 250px;
+  p {
+    color: #4d4d4d;
+  }
+  justify-content: center;
+  text-align: center;
+  background-color: $lightgray;
+}
+.fonctionnement {
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+  margin-bottom: 40px;
+  @include desktop{
+    height: 200px;
+}
+}
+.restaurants {
+  background-color: $lightgray;
+  padding-top: 30px;
+   @include desktop {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+    padding: 0 20%;
+  }
+  @include tablet {
     display: flex;
-    flex-direction: column; 
-    padding-top: 20px;
-    margin-bottom: 40px;
-  }
-  .restaurants {
-    background-color: $lightgray;
-    padding-top: 30px;
-    
-  }
-  .introduction {
-    @include introduction;
-    h2 {
-      font-weight: bold;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+      
     }
-    p {
-      color: #4d4d4d;
-    }
+}
+.restaurants h1 {
+  @include desktop {
+    width: 100%
   }
+  @include tablet {
+    width: 100%
+  }
+}
+.introduction {
+  @include introduction;
+  h2 {
+    font-weight: bold;
+  }
+  p {
+    color: #4d4d4d;
+  }
+  @include desktop{
+    height: 200px;
+    display: flex;
+    justify-content:center;
+    vertical-align: middle;  
+    padding-bottom: 0px;
+  }
+}
+

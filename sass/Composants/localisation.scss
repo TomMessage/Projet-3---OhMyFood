@@ -1,12 +1,16 @@
 .localisation {
-    background: #eaeaea;
-    display: flex;
-    justify-content: center;
-    box-shadow: inset 0px 5px 5px 0px #dddddd;
-    align-items: center;
-    height: 40px;
+  background: #eaeaea;
+  display: flex;
+  justify-content: center;
+  box-shadow: inset 0px 5px 0px 0px #dddddd;
+  align-items: center;
+  height: 40px;
+  @include desktop{
+    margin-top: 30px;
+    
+    
   }
-  .localisation__recherche input {
-   @include recherche; 
-
-  }
+}
+.localisation__recherche input {
+  @include recherche;
+}

@@ -1,0 +1,50 @@
+@keyframes fadein {
+  from {
+    opacity:0;
+  }
+  to {
+    opacity:1;
+  }
+}
+@keyframes loader__fondu {
+  0% {
+    opacity:1;
+  }
+  
+  100%{
+    opacity:0;
+  }
+}
+@keyframes hidden__loading {
+  from{
+    visibility: visible;
+  }
+  to{
+    visibility: hidden;
+  }
+}
+@keyframes loading-transition {
+  from {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  to {
+    opacity:0;
+    visibility:hidden;
+  }
+}
+@keyframes flash {
+  0% {
+      color: $color-primary;
+      text-shadow: 0 0 7px $color-secondary;
+  }
+  90% {
+      color: #484848;
+      text-shadow: none;
+  }
+  100% {
+      color: $color-secondary;
+      text-shadow: 0 0 7px $color-primary;
+  }
+}

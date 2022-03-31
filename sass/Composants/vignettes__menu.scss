@@ -1,0 +1,66 @@
+.menu__titre {
+    @include menu__titre;
+}
+.plats {
+    @include menu;
+}
+.vignette__plats {
+    @include plats;
+    @include tablet {
+        width: 40%;
+    }
+    @include desktop{
+        width: 25%;
+    }
+}
+.entrees h3,
+.plats-principaux h3,
+.desserts h3 {
+    font-family: Roboto;
+    padding-left: 10px;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+ 
+}
+.entrees {
+    @include tablet {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    @include desktop {
+       
+    }
+   
+}
+.entrees__titre {
+    @include tablet{
+        width: 100%;
+    }
+}
+.plats-principaux {
+    @include tablet {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+   
+}
+.plats-principaux__titre {
+    @include tablet{
+        width: 100%;
+    }
+}
+.desserts {
+    @include tablet {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+   
+}
+.desserts__titre {
+    @include tablet{
+        width: 100%;
+    }
+}

@@ -1,113 +1,164 @@
+@mixin header__pages {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+@mixin introduction {
+  background: #f6f6f6;
+  text-align: center;
+  width: 100%;
+  padding: 40px 0;
+}
+@mixin introduction__btn {
+  background-image: $degraderose;
+  border: 1px solid transparent;
+  border-radius: 30px;
+  padding: 10px 5px;
+  color: #fff;
+  font-weight: bold;
+  box-shadow: 4px 4px 6px #aaa;
+  cursor: pointer;
+}
+@mixin recherche {
+  border: none;
+  background: #e9e9e9;
+  font-size: 1rem;
+  padding: 20px 5px 20px 5px;
+  width: 200px;
+  text-align: center;
+  box-shadow: inset 0px 5px 0px 0px #dddddd;
+  height: 40px;
+}
 
-  @mixin introduction {
-    background: #f6f6f6;
-    text-align: center;
-    width: 100%;
-    padding: 40px 0;
-  }
-  $degraderose:linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
-  @mixin introduction__btn {
-    background-image: $degraderose;
-    border: 1px solid transparent;
-    border-radius: 30px;
-    padding: 10px 5px;
-    color: #fff;
-    font-weight: bold;
-    box-shadow: 4px 4px 6px #aaa;
-    cursor: pointer;
-  }
-  @mixin restaurants__vignettes {
-    border-radius: 25px;
-    box-shadow: 4px 4px 6px #aaa;
-    margin: 20px;
-    position: relative;
-    background: #fff;
-  }
-  @mixin retaurants__img {
-    object-fit: cover;
-    border-top-left-radius: 25px;
-    border-top-right-radius: 25px;
-    width: 100%;
-    height: 100%;
-    max-height: 220px;
-  }
-  @mixin recherche {
-    border: none;
-    background: #e9e9e9;
-    font-size: 1rem;
-    padding: 20px 5px 20px 5px;
-    width: 200px;
-    text-align: center;
-    box-shadow: inset 0px 5px 5px 0px #dddddd;
-    height: 40px;
-  }
-  @mixin introduction {
-    background: #f6f6f6;
-    text-align: center;
-    //width: 100%;//
-    padding: 40px;
-  }
-  @mixin numeros {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #9356dc;
-    color: #fff;
-    border-radius: 50%;
-    border: 2px solid #9356dc;
-    width: 25px;
-    height: 25px;
-    position: relative;
-    right: 20px;
-  
-  }
-  @mixin fonctionnement__vignette {
-    margin: 0 20px 20px 20px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    background: #f6f6f6;
-    border: 5px solid #f6f6f6;
-    border-radius: 10px;
-    font-weight: bold;
-    box-shadow: 4px 4px 6px #e9e9e9;
-    height: 50px;
-  }
-  @mixin btn__nouveau {
-    color: #008766;
-    background: $color-tertiary;
-    border: 5px solid $color-tertiary;
-    border-radius: 5px;
-   //position: absolute;
-   right: 1%;
-   top: 5%;
-   z-index: 3;//
-  }
-  @mixin header__pages {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-  }
-  @mixin menu__titre {
-    font-family: Shrikhand, sans-serif;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-  }
-  @mixin plats {
-    background-color: #fff;
-    border-radius: 15px;
-    margin: 10px;
-    padding: 10px;
-    box-shadow: 4px 4px 6px #aaa;
-    position: relative;
+@mixin btn__nouveau {
+  color: #008766;
+  background: $color-tertiary;
+  border: 5px solid $color-tertiary;
+  border-radius: 5px;
+  position: absolute;
+  right: 7%;
+  z-index: 2;
+  margin-top: 10px;
+}
+@mixin restaurants__vignettes {
+  border-radius: 25px;
+  box-shadow: 4px 4px 6px #aaa;
+  margin: 20px;
+  position: relative;
+  background: #fff;
+}
+@mixin retaurants__img {
+  object-fit: cover;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  width: 100%;
+  height: 100%;
+  max-height: 220px;
+}
+
+@mixin numeros {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #9356dc;
+  color: #fff;
+  border-radius: 50%;
+  border: 2px solid #9356dc;
+  width: 25px;
+  height: 25px;
+  position: relative;
+  right: 20px;
+}
+@mixin fonctionnement__vignette {
+  margin: 0 20px 20px 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background: #f6f6f6;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  box-shadow: 4px 4px 6px #e9e9e9;
+  height: 50px;
+  &:hover {
+    background-color: #f5ebf7;
+    i {
+      color: $color-primary;
     }
-    @mixin menu {
-      background-color: #f6f6f6;
-      border-top-left-radius: 25px;
-      border-top-right-radius: 25px;
-      width: 100%;
-      position: relative;
-      margin-top: -50px;
-    }
+  }
+}
+
+@mixin menu__titre {
+  font-family: Shrikhand, sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+@mixin plats {
+  background-color: #fff;
+  border-radius: 15px;
+  margin: 10px;
+  padding: 10px;
+  box-shadow: 4px 4px 6px #aaa;
+  position: relative;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  transition: padding-right 350ms ease-in-out;
+  &:hover {
+    padding-right: 91px;
+  }
+  &:hover .check {
+    transform: translate(-91px);
+  }
+  &:hover .fa-check-circle {
+    transform: rotate(360deg);
+  }
+}
+@mixin menu {
+  background-color: #f6f6f6;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  width: 100%;
+  position: relative;
+  margin-top: -50px;
+}
+@mixin check {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $color-tertiary;
+  width: 50px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  padding: 20px;
+  position: absolute;
+  right: -91px;
+  top: 0;
+  transition: transform 330ms ease-in-out;
+  & .fa-check-circle {
+    color: #fff;
+    transition: transform 500ms ease-in-out;
+  }
+}
+@mixin heart {
+  padding-top: 12px;
+  font-size: 15px;
+  :hover {
+    background: -webkit-linear-gradient($color-primary, $color-secondary);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 900;
+  }
+}
+@mixin tablet {
+  @media screen and (min-width: map-get($breakpoints, tablet)) {
+    @content;
+  }
+}
+@mixin desktop {
+  @media screen and (min-width: map-get($breakpoints, desktop)) {
+    @content;
+  }
+}

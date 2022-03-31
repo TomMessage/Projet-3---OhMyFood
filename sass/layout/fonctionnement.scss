@@ -1,16 +1,16 @@
 .fonctionnement h1 {
     padding-left: 10px;
     padding-bottom: 20px;
-
+  
+    
 }
 
 .fonctionnement__numeros {
-    @include numeros
+    @include numeros;
+   
 }
 .fonctionnement i {
-   color: #b2b2b2;
-  margin-right: 20px;
-  
+    color: #b2b2b2;
+    margin-right: 20px;
 }
-
 

@@ -1,5 +1,8 @@
 .nouveau {
-@include btn__nouveau;
-
-
+    @include btn__nouveau;
+    @include desktop {
+       position: absolute;
+       right: 5%
+       ;
+    }
 }

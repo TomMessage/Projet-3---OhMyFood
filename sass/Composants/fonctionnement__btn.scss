@@ -1,12 +1,32 @@
-.fonctionnement__vignette { 
-    
+.fonctionnement__vignette {
    @include fonctionnement__vignette;
- 
+   
+   @include tablet {
+      width: 40%;
+   }
+  @include desktop {
+      width: 30%;
+   }
   
 }
 .fonctionnement__btn {
-   display:flex;
-   flex-direction:column;
-  
+   display: flex;
+   flex-direction: column;
+   @include desktop {
+      display: flex;
+      flex-direction: row;
+      padding-left: 5%;
+      padding-right: 5%;
+      margin-top: 30px
+   }
+   @include tablet {
+      flex-wrap: wrap;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      padding-left: 5%;
+      padding-right: 5%;
+      margin-top: 30px
+   }
 }
-  
