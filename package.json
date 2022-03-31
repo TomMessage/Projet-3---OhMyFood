@@ -1,0 +1,22 @@
+{
+  "name": "p3openclassrooms",
+  "version": "1.0.0",
+  "description": "dynamiser_une_page_web_avec_des_animations_css",
+  "main": "index.html",
+  "scripts": {
+    "sass": "sass --watch ./sass/style.scss:./public/style.css --style compressed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TomMessage/ProjetOC.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TomMessage/ProjetOC/issues"
+  },
+  "homepage": "https://github.com/TomMessage/ProjetOC#readme",
+  "dependencies": {
+    "sass": "^1.49.9"
+  }
+}
