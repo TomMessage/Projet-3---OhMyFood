@@ -10,6 +10,9 @@ li {
 }
 h1 {
   margin: 0;
+  @include desktop{
+    font-size: 30px;
+  }
 }
 a {
   text-decoration: none;

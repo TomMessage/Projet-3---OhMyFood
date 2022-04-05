@@ -6,9 +6,7 @@
 }
 .vignette__plats {
     @include plats;
-    @include tablet {
-        width: 40%;
-    }
+    
     @include desktop{
         width: 25%;
     }
@@ -25,11 +23,14 @@
 .entrees {
     @include tablet {
         display: flex;
-        flex-wrap: wrap;
+        flex-direction: column;
         justify-content: center;
     }
     @include desktop {
-       
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
     }
    
 }
@@ -41,8 +42,14 @@
 .plats-principaux {
     @include tablet {
         display: flex;
-        flex-wrap: wrap;
+        flex-direction: column;
         justify-content: center;
+    }
+    @include desktop {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
     }
    
 }
@@ -54,8 +61,14 @@
 .desserts {
     @include tablet {
         display: flex;
-        flex-wrap: wrap;
+        flex-direction: column;
         justify-content: center;
+    }
+    @include desktop {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
     }
    
 }
